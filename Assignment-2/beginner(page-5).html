@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #353535;
+    margin-bottom: 30px;
+}
+
+.navbar>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.workouts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.workouts h1 {
+    font-size: 30px;
+}
+
+.workouts p {
+    font-weight: 500;
+}
+
+.workout_sets {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.workout_sets img {
+    width: 100%;
+    object-fit: cover;
+}
+</style>
+
+<body>
+    <section class="main">
+        <nav class="navbar">
+            <img src="https://img.freepik.com/premium-vector/barbell-dumbbell-gym-icon-logo-template-gym-badge-fitness-logo-design_757387-345.jpg" alt="">
+
+            <div class="nav_links">
+                <a href="">Home</a>
+                <a href="">Workout Level</a>
+                <a href="">About</a>
+                <a href="">Login/Register</a>
+            </div>
+        </nav>
+
+        <div class="workouts">
+            <h1>Beginner Level Exercise</h1>
+
+            <div class="workout_sets">
+                <div>
+                    <img src="./img/dumble press.png" alt="">
+                    <h2>Seated Chest Press</h2>
+                    <p>(10 reps x 4 sets)</p>
+                </div>
+                <div>
+                    <img src="./img/dumble shoulder press.png" alt="">
+                    <h2>Seated Rows</h2>
+                    <p>(10 reps x 4 sets)</p>
+                </div>
+                <div>
+                    <img src="./img/lat pulldown.png" alt="">
+                    <h2>Seated Leg Press</h2>
+                    <p>(10 reps x 4 sets)</p>
+                </div>
+            </div>
+            <div class="workout_sets">
+                <div>
+                    <img src="./img/leg press.png" alt="">
+                    <h2>Wide Grip Lat Pulldown</h2>
+                    <p>(10 reps x 4 sets)</p>
+                </div>
+                <div>
+                    <img src="./img/seated rows.png" alt="">
+                    <h2>Dumbbell Seated Shoulder</h2>
+                    <p>(10 reps x 4 sets)</p>
+                </div>
+                <div>
+                    <img src="./img/seated chest press.png" alt="">
+                    <h2>Dumbbell Bicep Curls</h2>
+                    <p>(10 reps x 4 sets)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #353535;
+    margin-bottom: 30px;
+}
+
+.navbar>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.workouts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.workouts h1 {
+    font-size: 30px;
+}
+
+.workouts p {
+    font-weight: 500;
+}
+
+.workout_sets {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.workout_sets img {
+    width: 100%;
+    object-fit: cover;
+}
+</style>
+
+<body>
+    <section class="main">
+        <nav class="navbar">
+            <img src="https://img.freepik.com/premium-vector/barbell-dumbbell-gym-icon-logo-template-gym-badge-fitness-logo-design_757387-345.jpg" alt="">
+
+            <div class="nav_links">
+                <a href="">Home</a>
+                <a href="">Workout Level</a>
+                <a href="">About</a>
+                <a href="">Login/Register</a>
+            </div>
+        </nav>
+
+        <div class="workouts">
+            <h1>Advanced Level Exercise</h1>
+
+            <div class="workout_sets">
+                <div>
+                    <img src="./img/barbell front raise.png" alt="">
+                    <h2>barbell front raise</h2>
+                    <p>(10 reps x 3 sets)</p>
+                </div>
+                <div>
+                    <img src="./img/litaral.png" alt="">
+                    <h2>Dumbbell litaral rais</h2>
+                    <p>(8 reps x 4 sets)</p>
+                </div>
+                <div>
+                    <img src="./img/militry press.png" alt="">
+                    <h2>Militry Press</h2>
+                    <p> (4 sets x 8-10 Raps)</p>
+                </div>
+            </div>
+            <div class="workout_sets">
+                <div>
+                    <img src="./img/sit ups.png" alt="">
+                    <h2>Decline sit ups</h2>
+                    <p>(Max raps x 3 sets)</p>
+                </div>
+                <div>
+                    <img src="./img/fly.png" alt="">
+                    <h2>Dumbbell Reverse fly</h2>
+                    <p>(10 reps 3 sets)</p>
+                </div>
+                <div>
+                    <img src="./img/upright rows.png" alt="">
+                    <h2>Upright rows</h2>
+                    <p>(4 sets, 8 Raps)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

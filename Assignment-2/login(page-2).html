@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #030303;
+  color: white;
+  padding: 14px 20px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: auto;
+  float: left;
+  width: 20px;
+  padding: 20px;
+}
+
+img.avatar {
+  height: 200px;
+}
+
+.container {
+  padding: 16px;
+  width: 50%;
+  border-radius: 3px;
+}
+
+span.psw {
+  float: none;
+  padding-top: 16px;
+}
+.h{
+    position:relative;
+
+
+    padding: 20px;
+} 
+
+</style>
+</head>
+<body>
+  <center>
+    <form action="/action_page.php" method="post">
+      <div class="header">
+        <h2 class="h">Login to Train2Gain</h2>
+      </div>
+  <div class="imgcontainer">
+    <img src="./img/gym.png" alt="Avatar" class="avatar">
+  </div>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <span class="psw"><a href="#">Forgot password?</a></span>
+</div>
+</form>
+</center>
+
+</body>
+</html>
